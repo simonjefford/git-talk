@@ -1,0 +1,60 @@
+Git - beyond the Github client
+
+* Agenda
+
+- Internals
+- Sharing Code
+- Rebasing
+- Other Cool Stuff
+
+* Internals
+
+* Objects
+
+- Git = A content-addressable file-system
+- Ask Git to store something and it gives you a key
+- Key = SHA1 hash of the content (plus a header)
+- You can use the key to get that content back
+- Blobs, trees & commits
+
+* Blobs
+
+- Just content
+- No names
+- DEMO
+
+* Trees
+
+- Gives names to blobs
+- Also to other trees
+- End result = snapshot of the contents of a folder, recursively
+
+  100644 blob 942ed2428fb28cc7fa8bd4c0298043548bcfab41 test.txt
+  040000 tree 29a422c19251aeaeb907175e9b3219a9bed6c616 folder
+
+- DEMO
+
+* Commits
+
+- Provide information as to who saved the snapshot
+- And why
+- And when
+
+  tree 79b50ad095937a0df94cabf17258079674f2d3b5
+  parent 0b54354cb3edd0c635071afa868690a50454f743
+  author Simon Jefford <simon.jefford@gmail.com> 1405416478 +0100
+  committer Simon Jefford <simon.jefford@gmail.com> 1405416478 +0100
+
+  added a folder
+
+- Most commits have one parent
+- Some have more
+- DEMO
+
+* So What?
+
+.image miles-davis.jpg
+
+* So What?
+
+.image objects.jpg
