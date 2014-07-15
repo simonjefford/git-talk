@@ -66,3 +66,7 @@ Git - beyond the Github client
 - The same is true for every commit in the history
 - If you have the objects, even if nothing points to them, you can get back to that point in time
 
+* Branches
+
+- Not objects
+- Just pointers to commits
