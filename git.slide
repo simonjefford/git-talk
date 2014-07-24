@@ -70,3 +70,41 @@ Git - beyond the Github client
 
 - Not objects
 - Just pointers to commits
+
+* Sharing Code
+
+* Sharing Code
+
+- Getting a repository => Cloning (git clone).
+- Updating a local repository from a remote one = fetching
+  git fetch
+
+- Updating a local repository AND updating local tracking branches = pulling
+  git pull
+
+- Updating a remote repository = pushing
+  git push
+
+- The "sync" button in the Github client is actually quite dangerous.
+- It forces a push and a pull.
+- You may not be ready to push yet.
+
+* Rebasing
+
+AKA Rewriting history
+
+Two main use cases
+
+- "Straightening out" history
+  git rebase master
+
+- Changing the order of commits, squashing commits or getting rid of commits.
+  git rebase -i master~10
+
+* Rebasing
+
+BEWARE
+
+Only rebase commits that have not been shared yet
+
+(Unless it's a pull request)
