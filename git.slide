@@ -4,6 +4,7 @@ Git - beyond the Github client
 
 - Internals
 - Sharing Code
+- Github
 - Rebasing
 - Other Cool Stuff
 
@@ -21,7 +22,6 @@ Git - beyond the Github client
 
 - Just content
 - No names
-- DEMO
 
 * Trees
 
@@ -31,8 +31,6 @@ Git - beyond the Github client
 
   100644 blob 942ed2428fb28cc7fa8bd4c0298043548bcfab41 test.txt
   040000 tree 29a422c19251aeaeb907175e9b3219a9bed6c616 folder
-
-- DEMO
 
 * Commits
 
@@ -49,7 +47,11 @@ Git - beyond the Github client
 
 - Most commits have one parent
 - Some have more
-- DEMO
+
+* Branches
+
+- Not objects
+- Just pointers to commits
 
 * So What?
 
@@ -65,11 +67,6 @@ Git - beyond the Github client
 - If Git gives you a working folder from a particular commit, it's definitely what was put in
 - The same is true for every commit in the history
 - If you have the objects, even if nothing points to them, you can get back to that point in time
-
-* Branches
-
-- Not objects
-- Just pointers to commits
 
 * Sharing Code
 
@@ -88,6 +85,17 @@ Git - beyond the Github client
 - The "sync" button in the Github client is actually quite dangerous.
 - It forces a push and a pull.
 - You may not be ready to push yet.
+
+* Github
+
+- Git host
+- Issue tracker
+- Documentation portal
+- Collaboration tool
+
+* Github
+
+Pull Requests
 
 * Rebasing
 
